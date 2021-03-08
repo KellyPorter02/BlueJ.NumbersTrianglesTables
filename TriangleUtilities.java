@@ -3,11 +3,28 @@
 public class TriangleUtilities {
 
     public static String getRow(int numberOfStars) {
-        return null;
+        int i = 1;
+        String a = "";
+        while (i <= numberOfStars) {
+            a += "*";
+            i++;
+        }
+        return a;
     }
     
     public static String getTriangle(int numberOfRows) {
-        return null;
+        //int i = 0;
+        //int j = 1;
+        String a = "";
+        /*while (i <= numberOfRows) {
+            while (j <= numberOfRows) {
+                a += "*";
+                j++;
+            }
+            a += "*\n";
+            i++;
+        }*/
+        return a;
     }
 
 

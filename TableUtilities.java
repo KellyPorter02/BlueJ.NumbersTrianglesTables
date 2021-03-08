@@ -2,7 +2,8 @@
 
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        return null;
+        String output = "  1 |\n";
+        return output;
     }
 
     public static String getLargeMultiplicationTable() {
