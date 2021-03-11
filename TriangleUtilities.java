@@ -1,38 +1,59 @@
  
 
 public class TriangleUtilities {
-
     public static String getRow(int numberOfStars) {
-        int i = 1;
-        String a = "";
-        while (i <= numberOfStars) {
-            a += "*";
-            i++;
+        String finS="";
+        int counter=0;
+        for (int i=0;i<numberOfStars;i++){
+        finS+="*";
         }
-        return a;
+        return finS;
     }
-    
     public static String getTriangle(int numberOfRows) {
-        //int i = 0;
-        //int j = 1;
-        String a = "";
-        /*while (i <= numberOfRows) {
-            while (j <= numberOfRows) {
-                a += "*";
-                j++;
-            }
-            a += "*\n";
-            i++;
-        }*/
-        return a;
+        StringBuilder sb= new StringBuilder();
+        for (int i=0;i<numberOfRows;i++){
+        for(int j=0;j<=i;j++){
+            sb=sb.append("*");
+        }
+        sb=sb.append("\n");
     }
-
-
+        return sb.toString();
+    }
     public static String getSmallTriangle() {
-        return null;
+             StringBuilder sb= new StringBuilder();
+        for (int i=0;i<4;i++){
+        for(int j=0;j<=i;j++){
+            sb=sb.append("*");
+        }
+        sb=sb.append("\n");
     }
-
+        return sb.toString();
+    }
     public static String getLargeTriangle() {
-        return null;
+            StringBuilder sb= new StringBuilder();
+        for (int i=0;i<9;i++){
+        for(int j=0;j<=i;j++){
+            sb=sb.append("*");
+        }
+        sb=sb.append("\n");
+    }
+        return sb.toString();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
